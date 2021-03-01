@@ -1,7 +1,7 @@
 from machine import UART
 import serial, skrf
 
-f = frequency(303.825, 'mhz')
+f = frequency(125, 'khz')
 c = cpw(frewq, w=10e-6, s=5e-6, ep_r=10.6)
 c.line(100*1e-6)
 u = UART(1, 9600)
